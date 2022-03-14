@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mata Kuliah PBW" />
+    <meta name="author" content=" Irna Purnahasanah" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- icon di Tab -->
+    <link rel="icon" href="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/logo-01.png" />
+
+    <!-- Nama di Tab -->
+    <title>Home : Irna Purnahasanah</title>
+
+    <style>
+      .banner-image {
+        background-image: url('../../Asdos/Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/gd.jpg');
+
+        background-size: cover;
+      }
+
+      nav ul li a::after {
+        content: '';
+        width: 0%;
+        height: 1px;
+        background: #ffffff;
+        display: block;
+        margin: auto;
+        transition: 0.2s;
+      }
+
+      nav ul li a:hover::after {
+        width: 100%;
+      }
+
+      .card {
+        border: 1px solid black;
+        margin: 50px 0;
+      }
+
+      .card-text {
+        text-align: justify;
+      }
+
+      img {
+        /* foto nge shape */
+        border-radius: 50px;
+      }
+
+      .card img {
+        /* gambar bergerak membesar 1 detik ketika kursor di dekatkan gambar */
+        transition: 0.3s;
+
+        box-sizing: border-box;
+
+        box-shadow: 0px 5px 14px rgb(168, 168, 168);
+      }
+
+      img:hover {
+        /* animasi memperbesar gambar ketika kursor didekatkan */
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Option JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Navbar(nav)/Header -->
+    <!-- 
+        - Responsive navbar = .navbar-expand-md
+        - Breakpointnya "Md = Medium. Tablet Landscape,Laptop/Notebook
+        - Color Schemes     = .navbar-light,  .bg-light 
+    -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+      <!-- isi Header -->
+      <div class="container">
+        <!-- Supported Content = .navbar-brand (projek sendiri) -->
+        <a class="navbar-brand fw-bolder" href="TugasP5_No.1.html">
+          <img src="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/logo-02.png" alt="" width="25" height="25" class="align-text-top" />
+
+          IRENPHASNA
+        </a>
+
+        <!-- JQueri hrs online -->
+        <!-- button Sembunyikn -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Grouping Collapse item isi : Home, About, Contact Me -->
+        <div class="collapse-toggle navbar-collapse" id="navbarNav">
+          <!-- Spasi/Tab dengan Main Content -->
+          <div class="mx-auto"></div>
+
+          <ul class="navbar-nav ms-auto">
+            <!-- 1. Home -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="TugasP5_No.1.html">Home</a>
+            </li>
+
+            <!-- 2. About -->
+            <li class="nav-item">
+              <a class="nav-link" href="#topik">About</a>
+            </li>
+
+            <!-- 3. Contact Me -->
+            <li class="nav-item">
+              <a class="nav-link" href="TugasP5_No.2.html">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Image -->
+    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+      <div class="content text-center">
+        <h1 class="text-white">WELCOME</h1>
+        <h6 class="text-white">☮︎ On Blog Irna Purnahasanah ☮︎</h6>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <section class="cardd" id="topik">
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-md-4 mb-5">
+            <div class="card">
+              <img src="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/kucing (1).jpg" class="card-img-top" alt="alam" />
+              <div class="card-body">
+                <h5 class="card-title">Senang</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi quisquam, velit culpa, facere doloribus expedita reiciendis itaque consectetur odit nisi? Aspernatur, illum quasi! Alias nisi consequatur expedita
+                </p>
+
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card">
+              <img src="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/kucing (4).jpg" class="card-img-top" alt="bukit" />
+              <div class="card-body">
+                <h5 class="card-title">Galak</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi quisquam, velit culpa, facere doloribus expedita reiciendis itaque consectetur odit nisi? Aspernatur, illum quasi! Alias nisi consequatur expedita
+                </p>
+
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card">
+              <img src="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/kucing (6).jpg" class="card-img-top" alt="hutan" />
+              <div class="card-body">
+                <h5 class="card-title">Malu</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi quisquam, velit culpa, facere doloribus expedita reiciendis itaque consectetur odit nisi? Aspernatur, illum quasi! Alias nisi consequatur expedita
+                </p>
+
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/kucing (2).jpg" class="card-img-top" alt="Danau" />
+              <div class="card-body">
+                <h5 class="card-title">Kepo</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi quisquam, velit culpa, facere doloribus expedita reiciendis itaque consectetur odit nisi? Aspernatur, illum quasi! Alias nisi consequatur expedita
+                </p>
+
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/kucing (5).jpg" class="card-img-top" alt="Air Terjun" />
+              <div class="card-body">
+                <h5 class="card-title">Tidur</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi quisquam, velit culpa, facere doloribus expedita reiciendis itaque consectetur odit nisi? Aspernatur, illum quasi! Alias nisi consequatur expedita
+                </p>
+
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/kucing (3).jpg" class="card-img-top" alt="Pantai" />
+              <div class="card-body">
+                <h5 class="card-title">Ngantuk</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi quisquam, velit culpa, facere doloribus expedita reiciendis itaque consectetur odit nisi? Aspernatur, illum quasi! Alias nisi consequatur expedita
+                </p>
+
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+    </script>
+  </body>
+</html>
